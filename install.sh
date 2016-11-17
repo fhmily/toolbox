@@ -6,7 +6,7 @@ echo "export EDITOR=vim" >> ~/.bashrc
 
 # install libevent, dependency of tmux
 sudo apt-get update
-sudo apt-get install build-essential libevent-2.0-5 libevent-dev libncurses5-dev autoconf automake m4 libtool perl pkg-config
+sudo apt-get install build-essential libevent libevent-dev libncurses5-dev autoconf automake m4 libtool perl pkg-config
 
 # install tmux
 cd ~
