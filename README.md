@@ -6,7 +6,8 @@ Bootstraps tools and enviroments for linux servers
 Tool List
 ---------
 - Min (For production servers)
-    - tmux
+    - zsh (oh-my-zsh)
+    - tmux (tmux-config)
 
 Installation
 ------------
