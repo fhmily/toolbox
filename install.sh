@@ -1,14 +1,21 @@
 #!/bin/bash
 
+# update packages
+sudo apt-get update
+
 # system wide editor
 export EDITOR=vim
 echo "export EDITOR=vim" >> ~/.bashrc
 
+# install zsh
+sudo apt-get zsh
+# install oh-my-zsh
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # install libevent, dependency of tmux
-sudo apt-get update
 sudo apt-get install build-essential libevent libevent-dev libncurses5-dev autoconf automake m4 libtool perl pkg-config
 
-# install tmux
+# build & install tmux from source
 cd ~
 rm -rf tmux
 git clone https://github.com/tmux/tmux.git
